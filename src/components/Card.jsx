@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { sakuraService } from "./sakuraService";
 
 function App() {
-  const [dataRandom, toPrintCard] = useState([]);
-  
+    const [dataRandom, toPrintCard] = useState([]);
 
 useEffect(() =>{
     sakuraService().then(data => {
@@ -12,25 +11,24 @@ useEffect(() =>{
     toPrintCard(dataRandom)})
 }, []);
     
-  return (
+return (
     <div class="grid-container">
-      <div class="empty-space"></div>
-      <div class="cards-grid">
-        {dataRandom.map((element) => {
-          return (
-            <>
-              <div key={element.id} class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src={element.cardsReverse.sakuraReverse} alt=""></img>
-                  </div>
-                  {/* <div class="flip-card-back" style={{ backgroundImage: `url(${element.sakuraCard})` }}></div> */}
+        <div class="cards-grid">
+            {dataRandom.map((element) => {
+            return (
+                <>
+                <div key={element.id} class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src={element.cardsReverse.sakuraReverse} alt=""></img>
+                    </div>
+                    
+                    </div>
                 </div>
-              </div>
-            </>
-          );
-        })}
-      </div>
+                </>
+            );
+            })}
+        </div>
     </div>
   );
 }
