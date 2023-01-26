@@ -23,7 +23,7 @@ function App() {
                 <div key={element.id} class="flip-card">
                   <div class="flip-card-inner" >
                     <div class="flip-card-front">
-                      <img src={element.cardsReverse.sakuraReverse}></img>
+                      <img src={element.cardsReverse.sakuraReverse} alt=""></img>
                     </div>
                     {/* <div class="flip-card-back" style={{ backgroundImage: `url(${element.sakuraCard})` }}></div> */}
                   </div>
