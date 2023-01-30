@@ -1,20 +1,20 @@
 import React from 'react'
-
+const {useState} = React;
 
 function Card(props) {
-    
+    const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+
+    setClicked(true);
+};   
+
     return (
-                <div key={props.id} class="flip-card">
-                    <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                <button onClick={ () => handleClick() } key={props.id} class="flip-card" style={{left:`${props.left}`, visibility: clicked ? "hidden" : "visible" }}>
                         <img src={props.img} alt=""></img>
-                    </div>
-                    
-                    </div>
-                </div>
+                </button>
     )
 }
 
 export default Card
 
-<button onclick={select(props.item)}>

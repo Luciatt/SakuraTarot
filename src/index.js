@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import AllCards from './components/AllCards';
 import reportWebVitals from './reportWebVitals';
 import AllCards from './components/AllCards';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Tablero />
     <AllCards />
   </React.StrictMode>
 );
