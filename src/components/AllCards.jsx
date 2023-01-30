@@ -13,8 +13,8 @@ useEffect(() =>{
 }, []);
     
 return (
-    <div class="grid-container">
-        <div class="cards-grid">
+    <div className="grid-container">
+        <div className="cards-grid">
             {dataRandom.map((item) => 
                 
                 <Card item={item} id={item.id} img={item.cardsReverse.sakuraReverse}/>
