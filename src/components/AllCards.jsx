@@ -13,11 +13,11 @@ useEffect(() =>{
 }, []);
     
 return (
-    <div class="grid-container">
-        <div class="cards-grid">
+    <div className="grid-container">
+        <div className="cards-grid">
             {dataRandom.map((item, index) => 
                 
-                <Card left={`${index * 1.72}%`} item={item} id={item.id} img={item.cardsReverse.sakuraReverse}/>
+                <Card left={`${index * 1.72}%`} item={item} key={item.id} img={item.cardsReverse.sakuraReverse}/>
                 
             )}
         </div>

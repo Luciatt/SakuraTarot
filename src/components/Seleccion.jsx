@@ -1,16 +1,20 @@
+import { useState, useEffect } from "react";
 
-
-let cartasElegidas = [ ];
+export let CartasElegidas = [ ];
 
 export function SelectCard(card){
-   
-       if (cartasElegidas.length <3 && card !== "undefined"){
-        cartasElegidas.push(card);
-        console.info(cartasElegidas);
-        //let position= cartasElegidas.indexOf(card);
-        //console.info(position);
-       }
-       return cartasElegidas; 
+   const [newCard, setCard] = useState([]);
+
+   useEffect(() =>{
+      if (CartasElegidas.length <3 && card !== "undefined"){
+         CartasElegidas.push(card);
+         console.info(CartasElegidas);
+         //let position= cartasElegidas.indexOf(card);
+         //console.info(position);
+        } 
+        setCard(newCard)
+  }, []);
+       
     }
 
 
