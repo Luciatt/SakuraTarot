@@ -1,9 +1,9 @@
 import "../css/App.css";
 import React, { useState, useEffect } from "react";
 import { sakuraService } from "./sakuraService";
-import  Card  from "./Card";
+import  {Card}  from "./Card";
 
-function AllCards() {
+function AllCards({handleClick}) {
     const [dataRandom, setData] = useState([]);
     
 useEffect(() =>{
@@ -17,7 +17,7 @@ return (
         <div className="cards-grid">
             {dataRandom.map((item, index) => 
                 
-                <Card left={`${index * 1.72}%`} item={item} key={item.id} img={item.cardsReverse.sakuraReverse}/>
+                <Card handleClick={handleClick} left={`${index * 1.74}%`} item={item} key={item.id} id={item.id} img={item.cardsReverse.sakuraReverse}/>
                 
             )}
         </div>

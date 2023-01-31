@@ -1,22 +1,25 @@
-import React from 'react'
-import {SelectCard} from './Seleccion'
-const {useState} = React;
+import React,{useState} from 'react'
+//import {SelectCard} from './Seleccion'
 
-function Card(props) {
+
+
+export function Card({handleClick, left, item, id, img} ) {
     const [clicked, setClicked] = useState(false);
     
-    const handleClick = (item) => {
+    const llamar = (item) => {
+        setClicked(true);
+        handleClick(item)
+    }
     
-    setClicked(true);
-    SelectCard(item)
-};   
+        
+        
+      
+
 
     return (
-                <button onClick={ () => handleClick(props.item) } key={props.id} className="flip-card" style={{left:`${props.left}`, visibility: clicked ? "hidden" : "visible" }}>
-                        <img src={props.img} alt=""></img>
+                <button onClick={ () => llamar(item) } key={id} className="flip-card" style={{left:left, visibility: clicked ? "hidden" : "visible" }}>
+                        <img src={img} alt=""></img>
                 </button>
     )
 }
-
-export default Card
 
