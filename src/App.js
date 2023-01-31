@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <AllCards handleClick={handleClick}/>
-      <div className="cards-grid">
+      <div className="select-cards-grid">
         <UnselectedCard pastOn={pastOn} selectedCard={past} text='PASADO' />
         <UnselectedCard pastOn={presOn} selectedCard={present} text='PRESENTE'/>
         <UnselectedCard pastOn={futOn} selectedCard={future} text='FUTURO' />
