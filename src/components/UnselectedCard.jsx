@@ -13,11 +13,11 @@ function UnselectedCard({pastOn, selectedCard, text}) {
           pastOn ?
             <>
             
-              <div className="flip-card">
-                  <div className="flip-card-inner">
-                      <div className="flip-card-front" style= {{backgroundImage: `url(${selectedCard.cardsReverse.sakuraReverse})`}}>
+              <div className="select-flip-card">
+                  <div className="select-flip-card-inner">
+                      <div className="select-flip-card-front" style= {{backgroundImage: `url(${selectedCard.cardsReverse.sakuraReverse})`}}>
                       </div>
-                      <div className="flip-card-back" style= {{backgroundImage: `url(${selectedCard.sakuraCard})`}}>
+                      <div className="select-flip-card-back" style= {{backgroundImage: `url(${selectedCard.sakuraCard})`}}>
                         
                       </div>
                   </div>
