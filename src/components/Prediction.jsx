@@ -5,12 +5,13 @@ import { useState } from 'react';
 import React from 'react'
 import { selectCards } from '../App';
 
-function Prediction({ past, present, future }) {
+function Prediction({ past, present, future, rotateCards }) {
     const [buttOn, setButton] = useState(true);
 
     const seePrediction = () => {
         if (selectCards.length === 3) {
             setButton(false);
+            rotateCards();
         }
     }
     return (

@@ -78,9 +78,11 @@ boby{
 .select-flip-card-back {
   transform: rotateY(180deg);
 }
-.select-flip-card:hover .select-flip-card-inner {
+
+ .select-flip-card-inner {
   transform: rotateY(-180deg);
 }
+
 .prediction {
   display: flex;
   align-items: center;
