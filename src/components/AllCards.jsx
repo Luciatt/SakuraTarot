@@ -5,11 +5,9 @@ import  {Card}  from "./Card";
 
 function AllCards({handleClick}) {
     const [dataRandom, setData] = useState([]);
-    
 useEffect(() =>{
     sakuraService().then(data => {
-    const dataRandom = data.sort(function () {return Math.random() - 0.5;})
-    setData(dataRandom)})
+    setData(data.sort(function () {return Math.random() - 0.5;}))})
 }, []);
     
 return (

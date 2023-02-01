@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import BackSakura from '../img/Mesa2.svg';
 
 function UnselectedCard({pastOn, selectedCard, text, rotate}) {
   
@@ -27,7 +26,10 @@ function UnselectedCard({pastOn, selectedCard, text, rotate}) {
           : 
           <>
             <div className="select-flip-card">
-              <h1>{text}</h1>
+              <div className="profileDefault">
+                <img src={BackSakura} alt="" />
+                <h3>{text}</h3>
+              </div>
             </div>
           </>
       }

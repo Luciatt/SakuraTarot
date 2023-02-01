@@ -1,9 +1,6 @@
-import { useState } from 'react';
-
-
-
-import React from 'react'
+import React, { useState }from 'react'
 import { selectCards } from '../App';
+import button from "../img/BotonPrediccion.svg";
 
 function Prediction({ past, present, future, rotateCards }) {
     const [buttOn, setButton] = useState(true);
@@ -21,7 +18,7 @@ function Prediction({ past, present, future, rotateCards }) {
                 buttOn ?
                     <>
                         <div className='prediction'>
-                            <button onClick={() => seePrediction()}>Prediction</button>
+                            <button onClick={() => seePrediction()} className="buttonPrediction"><img  src={button}></img></button>
                         </div>
                     </>
                     :
