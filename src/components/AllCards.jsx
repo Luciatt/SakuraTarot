@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { sakuraService } from "./sakuraService";
 import  {Card}  from "./Card";
 
-function AllCards({handleClick}) {
+function AllCards({handleClick, text}) {
     const [dataRandom, setData] = useState([]);
 useEffect(() =>{
     sakuraService().then(data => {
@@ -15,7 +15,7 @@ return (
         <div className="cards-grid">
             {dataRandom.map((item, index) => 
                 
-                <Card handleClick={handleClick} left={`${3.5+index * 1.60}%`} item={item} key={item.id} id={item.id} img={item.cardsReverse.sakuraReverse}/>
+                <Card text={text} handleClick={handleClick} left={`${3.5+index * 1.60}%`} item={item} key={item.id} id={item.id} img={item.cardsReverse.sakuraReverse}/>
                 
             )}
         </div>
