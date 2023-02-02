@@ -1,10 +1,9 @@
 import React from 'react'
 import BackSakura from '../img/Mesa2.svg';
 
-function UnselectedCard({pastOn, selectedCard, text, rotate}) {
-  
+function SelectedCard({pastOn, selectedCard, text, rotate}) {
 
-    
+
   return (
       <>
         {
@@ -37,4 +36,4 @@ function UnselectedCard({pastOn, selectedCard, text, rotate}) {
   )
 }
 
-export default UnselectedCard
+export default SelectedCard

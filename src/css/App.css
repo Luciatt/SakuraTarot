@@ -9,10 +9,13 @@ boby{
 }
 
 
+.grid-container {
+  padding-top: 4vh;
+}
 
 .cards-grid {
   width: 100vw;
-  height: 35vh;
+  height: 33vh;
   flex-wrap: wrap;
 }
 
@@ -37,12 +40,11 @@ boby{
 ------------------------------------------
 .select-container{
   display: flex;
-  
+  height: 45vh;
 }
 .select-cards-grid {
   display: flex;
   grid-gap: 90px;
-  padding-bottom: 60px;
   height: 45vh;
   justify-content: center;
 }
@@ -83,8 +85,10 @@ boby{
 
 .prediction {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
   color:rgb(255, 255, 255);
 }
 
@@ -106,9 +110,15 @@ boby{
   color:rgb(255, 255, 255);
 }
 
-
 .buttonPrediction {
   width:150px;
+  height: 100px;
   background: none;
   border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonPrediction img {
+  scale: 1;
 }

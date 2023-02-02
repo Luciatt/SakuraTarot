@@ -15,7 +15,7 @@ return (
         <div className="cards-grid">
             {dataRandom.map((item, index) => 
                 
-                <Card handleClick={handleClick} left={`${index * 1.74}%`} item={item} key={item.id} id={item.id} img={item.cardsReverse.sakuraReverse}/>
+                <Card handleClick={handleClick} left={`${3.5+index * 1.60}%`} item={item} key={item.id} id={item.id} img={item.cardsReverse.sakuraReverse}/>
                 
             )}
         </div>
