@@ -1,0 +1,3 @@
+index<=27? left={`${index * 1.72}%`} : left={`${(index-28) * 1.72}%`} top=
+
+ style={{transform: rotate ?  rotateY(-180) : rotateY(0) }}
