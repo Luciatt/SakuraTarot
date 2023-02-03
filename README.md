@@ -25,7 +25,7 @@ Este es un juego de tarot en línea donde los jugadores pueden adivinar su futur
 ## Colaboradores
 
 
-| [<img src="https://avatars.githubusercontent.com/u/119872787?v=4" width=115><br><sub>Elena Pulido Alvaré</sub>](https://github.com/Luciatt) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Carlos Sánchez Yerga</sub>](https://github.com/Holapueblodev) |
+| [<img src="https://avatars.githubusercontent.com/u/119872787?v=4" width=115><br><sub>Lucía Tirado Turial</sub>](https://github.com/Luciatt) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Carlos Sánchez Yerga</sub>](https://github.com/Holapueblodev) |
 | :---: | :---: |
 
 
