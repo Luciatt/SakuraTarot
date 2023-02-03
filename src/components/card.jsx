@@ -1,11 +1,5 @@
-import React from "react";
+import api from api
 
-const TarotCard = ({card})=>{
-    return(
-        <div img scr={card.imageUrl}alt={card.name}>
-            <h1>{card.name}</h1>
-            <p>{card.description}</p>
-        </div>
-    );
-};
-export default TarotCard;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello, world!</h1>);
