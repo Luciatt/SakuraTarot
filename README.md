@@ -1,3 +1,31 @@
+# Sakura Tarot #
+
+Este es un juego de tarot en línea donde los jugadores pueden adivinar su futuro mediante la interpretación de las cartas del tarot.
+
+## Instrucciones de uso
+1. Descarga o clona este repositorio en tu ordenador.
+2. Asegúrate de tener una conexión a Internet.
+3. Ejecuta el archivo "index.html" en tu navegador web.
+4. Selecciona las cartas del tarot y obtén su interpretación.
+
+## Características
+- Selección de cartas aleatorias.
+- Interpretaciones detalladas de las cartas.
+- Diseño atractivo y fácil de usar.
+
+## Tecnologías utilizadas
+- HTML
+- CSS
+- JavaScript
+- React
+
+## Contribuciones
+- Si encuentras algún error o tienes alguna sugerencia, por favor contáctanos.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
